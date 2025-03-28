@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e93957a6-73e4-4bba-8b35-292729c94d50">
+  <producedTypes>
+    <objectType typeId="02f61025-bd73-4ec2-81bd-411097c2fd1e" valueTypeId="14693231-25c6-407b-bb1d-2afc56d4e1c0"/>
+    <managerType typeId="b20d65b0-7b3d-4eca-a304-deeadcba9dac" valueTypeId="85fc9372-2823-4fbb-9975-d9e4040c52c0"/>
+  </producedTypes>
+  <name>ЗагрузитьКурсыВалютЗаПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузить курсы валют за период</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузитьКурсыВалютЗаПериод.Form.Форма</defaultForm>
+  <attributes uuid="f3fe326f-e3b5-40ad-ac08-b371d617cd51">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="12715f70-671c-44ff-9e50-dd8e0bb8afa1">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="ffedecf9-b4e6-403e-86c6-938f5bb7020c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

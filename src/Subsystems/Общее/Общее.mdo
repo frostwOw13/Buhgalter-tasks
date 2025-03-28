@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c1762a9-cdb9-4b0a-8e28-1a87b8397132">
+  <name>Общее</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общее</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Общее</picture>
+  </picture>
+  <content>Catalog.ЕдиницыИзмерения</content>
+  <content>Catalog.Склады</content>
+  <content>Catalog.Номенклатура</content>
+  <content>CommonForm.ПараметрыУчета</content>
+  <content>Enum.ВидыТоваров</content>
+  <content>Catalog.Серии</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.КонтактныеЛица</content>
+  <content>Catalog.Валюты</content>
+  <content>Catalog.Должности</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.Подразделения</content>
+  <content>InformationRegister.КурсыВалют</content>
+  <content>Document.ПеремещениеТоваров</content>
+  <content>FunctionalOption.ПоСкладам</content>
+  <content>FunctionalOption.ПоСериям</content>
+  <content>FilterCriterion.ОтборПоНоменклатуре</content>
+  <content>DataProcessor.ЗагрузитьКурсыВалютЗаПериод</content>
+</mdclass:Subsystem>

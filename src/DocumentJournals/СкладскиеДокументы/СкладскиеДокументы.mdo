@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1d12064-26e7-401a-86ba-2553fcde0649">
+  <producedTypes>
+    <selectionType typeId="9b239f43-e585-45d1-9cdf-176589a61a73" valueTypeId="df5c725a-919d-4ead-9d47-4c9fc4388ab1"/>
+    <listType typeId="7b7a0086-fb6a-4014-8dec-5971680d6f51" valueTypeId="a8732226-b80c-4593-b639-8c78fb19583b"/>
+    <managerType typeId="06bf348a-4feb-4bbf-bb44-143e92f7878f" valueTypeId="97f8e9a7-7cfa-48fb-a151-9db13aadd9a8"/>
+  </producedTypes>
+  <name>СкладскиеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Складские документы</value>
+  </synonym>
+  <defaultForm>DocumentJournal.СкладскиеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПоступлениеТоваров</registeredDocuments>
+  <registeredDocuments>Document.ПродажаТоваров</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеТоваров</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="dc723a88-aa88-47c0-95f0-51918adaff41">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ПоступлениеТоваров.Attribute.Контрагент</references>
+    <references>Document.ПродажаТоваров.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="fadd0d9f-9682-47ca-9014-9aa8212b678d">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.ПоступлениеТоваров.Attribute.Склад</references>
+    <references>Document.ПродажаТоваров.Attribute.Склад</references>
+    <references>Document.ПеремещениеТоваров.Attribute.СкладПолучатель</references>
+  </columns>
+  <columns uuid="c2189a2f-c64d-4e8b-ae0f-b2a73024871a">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <references>Document.ПоступлениеТоваров.Attribute.СуммаДокумента</references>
+    <references>Document.ПродажаТоваров.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="96c3cb8a-4cf8-4817-93a5-c79cc90a1d3a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ПоступлениеТоваров.Attribute.Организация</references>
+    <references>Document.ПродажаТоваров.Attribute.Организация</references>
+    <references>Document.ПеремещениеТоваров.Attribute.Организация</references>
+  </columns>
+  <columns uuid="2689b034-124e-4110-99d2-0f38968b71c0">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <references>Document.ПоступлениеТоваров.Attribute.Подразделение</references>
+    <references>Document.ПродажаТоваров.Attribute.Подразделение</references>
+    <references>Document.ПеремещениеТоваров.Attribute.СкладПолучатель</references>
+  </columns>
+  <forms uuid="75ee29ba-780b-459a-b5da-81c5e1565dab">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>
